@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/calls/call_page.dart';
+import 'package:whatsapp/camera/camera_screen.dart';
 import 'package:whatsapp/chats/chats_page.dart';
 import 'package:whatsapp/status/status_page.dart';
 
@@ -84,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen>
       body: TabBarView(
         controller: _controller,
         children:  [
-          Text('Camera Page'),
+          CameraPage(),
           ChatPage(),
           StatusPage(),
          CallPage(),
